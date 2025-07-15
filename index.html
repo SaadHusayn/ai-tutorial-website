@@ -1,96 +1,551 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="/_vercel/insights/script.js"></script>
+    <title>Artificial Intelligence - Basic Knowledge</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        main {
+            background: white;
+            margin: 2rem 0;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .content-section {
+            padding: 3rem;
+            border-bottom: 1px solid #ecf0f1;
+        }
+
+        .content-section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        h3 {
+            color: #34495e;
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem 0;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: #555;
+            text-align: justify;
+        }
+
+        .ai-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .ai-type {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .ai-type:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .applications {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .application {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .application:hover {
+            transform: scale(1.05);
+        }
+
+        .quiz-section {
+            background: #f8f9fa;
+            padding: 3rem;
+        }
+
+        .quiz-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .question {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .question h4 {
+            color: #2c3e50;
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .options {
+            list-style: none;
+        }
+
+        .options li {
+            margin-bottom: 1rem;
+        }
+
+        .options label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 0.8rem;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .options label:hover {
+            background-color: #f1f2f6;
+        }
+
+        .options input[type="radio"] {
+            margin-right: 1rem;
+            transform: scale(1.2);
+        }
+
+        .quiz-buttons {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            margin: 0 1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .result {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .result.hidden {
+            display: none;
+        }
+
+        .score {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .score.excellent {
+            color: #27ae60;
+        }
+
+        .score.good {
+            color: #f39c12;
+        }
+
+        .score.needs-improvement {
+            color: #e74c3c;
+        }
+
+        footer {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            padding: 2rem 0;
+            color: #7f8c8d;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .content-section {
+                padding: 2rem;
+            }
+
+            .ai-types {
+                grid-template-columns: 1fr;
+            }
+
+            .applications {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Artificial Intelligence</h1>
+            <p class="subtitle">Understanding the Fundamentals of AI Technology</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <main>
+            <section class="content-section">
+                <h2>What is Artificial Intelligence?</h2>
+                <p>
+                    Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans. The term may also be applied to any machine that exhibits traits associated with a human mind such as learning and problem-solving.
+                </p>
+                <p>
+                    AI systems are designed to perform tasks that typically require human intelligence, including visual perception, speech recognition, decision-making, and language translation. The goal of AI is to create systems that can function intelligently and independently.
+                </p>
+            </section>
+
+            <section class="content-section">
+                <h2>Types of Artificial Intelligence</h2>
+                <div class="ai-types">
+                    <div class="ai-type">
+                        <h3>Machine Learning (ML)</h3>
+                        <p>A subset of AI that enables machines to learn and improve from experience without being explicitly programmed. ML algorithms build mathematical models based on training data to make predictions or decisions.</p>
+                    </div>
+                    <div class="ai-type">
+                        <h3>Deep Learning</h3>
+                        <p>A subset of machine learning that uses artificial neural networks with multiple layers to model and understand complex patterns in data. It's particularly effective for image and speech recognition.</p>
+                    </div>
+                    <div class="ai-type">
+                        <h3>Natural Language Processing (NLP)</h3>
+                        <p>The branch of AI that helps computers understand, interpret, and manipulate human language. NLP bridges the gap between human communication and computer understanding.</p>
+                    </div>
+                    <div class="ai-type">
+                        <h3>Computer Vision</h3>
+                        <p>A field of AI that trains computers to interpret and understand visual information from the world. It enables machines to identify and analyze visual content in images and videos.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>Applications of AI</h2>
+                <div class="applications">
+                    <div class="application">
+                        <h3>Healthcare</h3>
+                        <p>Medical diagnosis, drug discovery, and personalized treatment plans</p>
+                    </div>
+                    <div class="application">
+                        <h3>Transportation</h3>
+                        <p>Autonomous vehicles, traffic optimization, and route planning</p>
+                    </div>
+                    <div class="application">
+                        <h3>Finance</h3>
+                        <p>Fraud detection, algorithmic trading, and risk assessment</p>
+                    </div>
+                    <div class="application">
+                        <h3>Entertainment</h3>
+                        <p>Content recommendation, game AI, and content creation</p>
+                    </div>
+                    <div class="application">
+                        <h3>Education</h3>
+                        <p>Personalized learning, intelligent tutoring systems, and automated grading</p>
+                    </div>
+                    <div class="application">
+                        <h3>Customer Service</h3>
+                        <p>Chatbots, virtual assistants, and automated support systems</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>The Future of AI</h2>
+                <p>
+                    The future of AI holds immense potential for transforming various aspects of human life. As AI technology continues to advance, we can expect to see more sophisticated applications in areas such as:
+                </p>
+                <p>
+                    <strong>Artificial General Intelligence (AGI):</strong> The development of AI systems that can understand, learn, and apply knowledge across a wide range of tasks at a level equal to or beyond human capability.
+                </p>
+                <p>
+                    <strong>Ethical AI:</strong> Ensuring AI systems are developed and deployed responsibly, with considerations for fairness, transparency, and accountability.
+                </p>
+                <p>
+                    <strong>Human-AI Collaboration:</strong> Creating systems where humans and AI work together, leveraging the strengths of both to achieve better outcomes than either could alone.
+                </p>
+            </section>
+
+            <section class="quiz-section">
+                <div class="quiz-container">
+                    <h2>Test Your Knowledge</h2>
+                    <p style="text-align: center; margin-bottom: 2rem;">Take this quiz to test your understanding of Artificial Intelligence concepts!</p>
+                    
+                    <form id="quizForm">
+                        <div class="question">
+                            <h4>1. What does AI stand for?</h4>
+                            <ul class="options">
+                                <li><label><input type="radio" name="q1" value="a"> Automated Intelligence</label></li>
+                                <li><label><input type="radio" name="q1" value="b"> Artificial Intelligence</label></li>
+                                <li><label><input type="radio" name="q1" value="c"> Advanced Integration</label></li>
+                                <li><label><input type="radio" name="q1" value="d"> Algorithmic Implementation</label></li>
+                            </ul>
+                        </div>
+
+                        <div class="question">
+                            <h4>2. Which of the following is a subset of AI that enables machines to learn from experience?</h4>
+                            <ul class="options">
+                                <li><label><input type="radio" name="q2" value="a"> Computer Vision</label></li>
+                                <li><label><input type="radio" name="q2" value="b"> Natural Language Processing</label></li>
+                                <li><label><input type="radio" name="q2" value="c"> Machine Learning</label></li>
+                                <li><label><input type="radio" name="q2" value="d"> Robotics</label></li>
+                            </ul>
+                        </div>
+
+                        <div class="question">
+                            <h4>3. What is Deep Learning?</h4>
+                            <ul class="options">
+                                <li><label><input type="radio" name="q3" value="a"> A type of database management</label></li>
+                                <li><label><input type="radio" name="q3" value="b"> A subset of machine learning using neural networks with multiple layers</label></li>
+                                <li><label><input type="radio" name="q3" value="c"> A programming language for AI</label></li>
+                                <li><label><input type="radio" name="q3" value="d"> A hardware component for AI systems</label></li>
+                            </ul>
+                        </div>
+
+                        <div class="question">
+                            <h4>4. Which AI application is commonly used in healthcare?</h4>
+                            <ul class="options">
+                                <li><label><input type="radio" name="q4" value="a"> Traffic optimization</label></li>
+                                <li><label><input type="radio" name="q4" value="b"> Medical diagnosis</label></li>
+                                <li><label><input type="radio" name="q4" value="c"> Content recommendation</label></li>
+                                <li><label><input type="radio" name="q4" value="d"> Algorithmic trading</label></li>
+                            </ul>
+                        </div>
+
+                        <div class="question">
+                            <h4>5. What does NLP stand for in the context of AI?</h4>
+                            <ul class="options">
+                                <li><label><input type="radio" name="q5" value="a"> Neural Learning Process</label></li>
+                                <li><label><input type="radio" name="q5" value="b"> Network Layer Protocol</label></li>
+                                <li><label><input type="radio" name="q5" value="c"> Natural Language Processing</label></li>
+                                <li><label><input type="radio" name="q5" value="d"> Numerical Logic Programming</label></li>
+                            </ul>
+                        </div>
+
+                        <div class="quiz-buttons">
+                            <button type="submit" class="btn">Submit Quiz</button>
+                            <button type="button" class="btn" id="resetBtn">Reset Quiz</button>
+                        </div>
+                    </form>
+
+                    <div id="result" class="result hidden">
+                        <div class="score" id="scoreDisplay"></div>
+                        <p id="resultMessage"></p>
+                        <button class="btn" id="retakeBtn">Retake Quiz</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AI Knowledge Hub. Built with HTML, CSS, and JavaScript.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Quiz functionality
+        const quizForm = document.getElementById('quizForm');
+        const resultDiv = document.getElementById('result');
+        const scoreDisplay = document.getElementById('scoreDisplay');
+        const resultMessage = document.getElementById('resultMessage');
+        const resetBtn = document.getElementById('resetBtn');
+        const retakeBtn = document.getElementById('retakeBtn');
+
+        // Correct answers
+        const correctAnswers = {
+            q1: 'b', // Artificial Intelligence
+            q2: 'c', // Machine Learning
+            q3: 'b', // A subset of machine learning using neural networks with multiple layers
+            q4: 'b', // Medical diagnosis
+            q5: 'c'  // Natural Language Processing
+        };
+
+        // Handle quiz submission
+        quizForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(quizForm);
+            let score = 0;
+            let totalQuestions = Object.keys(correctAnswers).length;
+            
+            // Calculate score
+            for (let question in correctAnswers) {
+                if (formData.get(question) === correctAnswers[question]) {
+                    score++;
+                }
+            }
+            
+            // Display results
+            displayResults(score, totalQuestions);
+        });
+
+        function displayResults(score, total) {
+            const percentage = (score / total) * 100;
+            
+            // Hide form and show results
+            quizForm.style.display = 'none';
+            resultDiv.classList.remove('hidden');
+            
+            // Display score
+            scoreDisplay.textContent = `${score}/${total} (${percentage}%)`;
+            
+            // Set score class and message based on performance
+            if (percentage >= 80) {
+                scoreDisplay.className = 'score excellent';
+                resultMessage.textContent = 'Excellent! You have a great understanding of AI concepts.';
+            } else if (percentage >= 60) {
+                scoreDisplay.className = 'score good';
+                resultMessage.textContent = 'Good job! You have a solid grasp of AI fundamentals.';
+            } else {
+                scoreDisplay.className = 'score needs-improvement';
+                resultMessage.textContent = 'Keep learning! Review the content above to improve your understanding.';
+            }
+        }
+
+        // Reset quiz
+        function resetQuiz() {
+            quizForm.reset();
+            quizForm.style.display = 'block';
+            resultDiv.classList.add('hidden');
+        }
+
+        resetBtn.addEventListener('click', resetQuiz);
+        retakeBtn.addEventListener('click', resetQuiz);
+
+        // Smooth scrolling for better UX
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add smooth scrolling to quiz section when page loads
+            const quizSection = document.querySelector('.quiz-section');
+            
+            // Optional: Add a scroll-to-quiz button functionality
+            window.scrollToQuiz = function() {
+                quizSection.scrollIntoView({ behavior: 'smooth' });
+            };
+        });
+
+        // Add some interactive animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all content sections for animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.content-section, .quiz-section');
+            sections.forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
 </html>
